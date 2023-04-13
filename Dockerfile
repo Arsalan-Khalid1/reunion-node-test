@@ -26,4 +26,4 @@ RUN npm run build
 EXPOSE $PORT
 
 # Start the app when the container starts
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]

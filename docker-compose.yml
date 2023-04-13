@@ -13,7 +13,7 @@ services:
       SECRET_KEY: "ajbdoabvoeqvroqbndiamcpqebpiqebriqenoqbgrb3ip1iy083y120380yY(*T*&T#*&@&(T(b ,skjqr)))"
     ports:
       - "5000:5000"
-    command: npm start
+    command: npm run dev
 
   test:
     build:

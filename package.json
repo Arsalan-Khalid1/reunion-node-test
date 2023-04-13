@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npx tsc",
     "test": "mocha -r ts-node/register 'src/app/specs/**/*.ts'",
-    "start": "nodemon index.ts"
+    "start": "node index.ts",
+    "dev": "nodemon index.ts"
   },
   "repository": {
     "type": "git",
