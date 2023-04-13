@@ -1,0 +1,21 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DB_URL: "mongodb+srv://daredefyme:daredefyme@cluster0.prf6u.mongodb.net/?retryWrites=true&w=majority"
+      PORT: "5000"
+      SECRET_KEY: "ajbdoabvoeqvroqbndiamcpqebpiqebriqenoqbgrb3ip1iy083y120380yY(*T*&T#*&@&(T(b ,skjqr)))"
+    ports:
+      - "5000:5000"
+    command: npm start
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DB_URL: "mongodb+srv://daredefyme:daredefyme@cluster0.prf6u.mongodb.net/?retryWrites=true&w=majority"
+    command: npm test
