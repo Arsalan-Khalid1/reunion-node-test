@@ -7,7 +7,8 @@ okay so to run tests, use the command as follow
          'docker-compose run test' OR 'docker compose run test'
 
 and to run the development server, run the command as follow
-'docker-compose run app' OR 'docker compose run app'
+
+         'docker-compose run app' OR 'docker compose run app'
 
 Endpoints:
 
