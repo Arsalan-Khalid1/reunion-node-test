@@ -187,6 +187,8 @@ export class PostService {
           comments: post.comments.map((c: any) => c.comment),
           likes: post.likes.length
         }
+      }).sort((a: any,b: any) => {
+        return new Date(b.created_at).valueOf() - new Date(a.created_at).valueOf()
       })
       return finalArray;
     }

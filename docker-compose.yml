@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - ./src:/app/src
     environment:
       DB_URL: "mongodb+srv://daredefyme:daredefyme@cluster0.prf6u.mongodb.net/?retryWrites=true&w=majority"
       PORT: "5000"
